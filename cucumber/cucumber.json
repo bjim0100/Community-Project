@@ -1,0 +1,558 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6602798600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setup()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Automated Adding job categories",
+        "description": "",
+        "id": "automated-adding-job-categories;automated-adding-job-categories;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 5712472900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDownAndScreenshotOnFailure(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7378181700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to url (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_navigates_to_url_addcategory()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 578167800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user submits email and passwword (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_submits_email_and_passwword_addcategory()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 269684200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks login (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_clicks_login_addcategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5244752100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on job (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_clicks_on_job_addcategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 205628700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks on job categories (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_clicks_on_job_categories_addcategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 728198900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on add category (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_clicks_on_add_category_addcategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 145436200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user types category \"Education\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Education",
+                  "offset": 21
+                }
+              ],
+              "location": "addcategorysteps.user_types_category(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@TEST_COMMUNITY-765"
+          },
+          {
+            "line": 1,
+            "name": "@COMMUNITY-713"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5154111300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setup()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Automated Adding job categories",
+        "description": "",
+        "id": "automated-adding-job-categories;automated-adding-job-categories;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 5684039900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDownAndScreenshotOnFailure(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4377922700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to url (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_navigates_to_url_addcategory()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 417952900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user submits email and passwword (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_submits_email_and_passwword_addcategory()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 124868800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks login (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_clicks_login_addcategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5232860800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on job (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_clicks_on_job_addcategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 138268900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks on job categories (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_clicks_on_job_categories_addcategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 139370400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on add category (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_clicks_on_add_category_addcategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77800000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user types category \"Sports\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sports",
+                  "offset": 21
+                }
+              ],
+              "location": "addcategorysteps.user_types_category(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@TEST_COMMUNITY-765"
+          },
+          {
+            "line": 1,
+            "name": "@COMMUNITY-713"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5341662000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setup()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Automated Adding job categories",
+        "description": "",
+        "id": "automated-adding-job-categories;automated-adding-job-categories;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 5710928600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDownAndScreenshotOnFailure(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5329644300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to url (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_navigates_to_url_addcategory()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 484826300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user submits email and passwword (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_submits_email_and_passwword_addcategory()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 249182600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks login (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_clicks_login_addcategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5262255700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on job (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_clicks_on_job_addcategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 168833400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks on job categories (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_clicks_on_job_categories_addcategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 684178200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on add category (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_clicks_on_add_category_addcategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115523700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user types category \"Phones and Accessories\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Phones and Accessories",
+                  "offset": 21
+                }
+              ],
+              "location": "addcategorysteps.user_types_category(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@TEST_COMMUNITY-765"
+          },
+          {
+            "line": 1,
+            "name": "@COMMUNITY-713"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5242202200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setup()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Automated Adding job categories",
+        "description": "",
+        "id": "automated-adding-job-categories;automated-adding-job-categories;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 5681884600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDownAndScreenshotOnFailure(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8618339800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to url (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_navigates_to_url_addcategory()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 447887100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user submits email and passwword (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_submits_email_and_passwword_addcategory()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 124526500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks login (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_clicks_login_addcategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5233295400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on job (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_clicks_on_job_addcategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 173821300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks on job categories (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_clicks_on_job_categories_addcategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118573300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on add category (addcategory)",
+            "match": {
+              "location": "addcategorysteps.user_clicks_on_add_category_addcategory()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83948500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user types category \"Groceries\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Groceries",
+                  "offset": 21
+                }
+              ],
+              "location": "addcategorysteps.user_types_category(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@TEST_COMMUNITY-765"
+          },
+          {
+            "line": 1,
+            "name": "@COMMUNITY-713"
+          }
+        ]
+      }
+    ],
+    "name": "Automated Adding job categories",
+    "description": "",
+    "id": "automated-adding-job-categories",
+    "keyword": "Feature",
+    "uri": "C:/Users/USER/git/community-project/src/test/java/jobFeatures/AddCategories.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@COMMUNITY-713"
+      }
+    ]
+  }
+]

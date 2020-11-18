@@ -12,8 +12,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		glue = {"stepDefinitions"}, 
 		monochrome = true, 
 		tags = {}, 
-		plugin = { "pretty", "html:target/cucumber", "json:target/cucumber.json",
-				"com.cucumber.listener.ExtentCucumberFormatter:output/report.html" }
+				plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json",
+						"com.cucumber.listener.ExtentCucumberFormatter:target/report.html"}
 		)
 
 public class JobsRunner extends AbstractTestNGCucumberTests{
