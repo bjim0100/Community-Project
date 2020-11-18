@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Cucumber_Framework">
-                    <span>C:\Users\USER\git\community-project\testng.xml</span>
+                    <span>C:\official_projects\community-project\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                    <span class="method-stats">8 methods, 4 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,6 +100,16 @@
                       <a href="#" panel-name="suite-Cucumber_Framework" class="show-methods failed suite-Cucumber_Framework"> (show)</a> <!-- show-methods failed suite-Cucumber_Framework -->
                     </span>
                     <div class="method-list-content failed suite-Cucumber_Framework">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Framework" title="runners.MainRunner" hash-for-method="feature(Marketplace)">feature(Marketplace)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Framework" title="runners.MainRunner" hash-for-method="feature(Marketplace)">feature(Marketplace)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Framework" title="runners.MainRunner" hash-for-method="feature(Marketplace)">feature(Marketplace)</a> <!-- method navigator-link -->
@@ -121,22 +131,22 @@
                     <div class="method-list-content passed suite-Cucumber_Framework">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Framework" title="runners.MainRunner" hash-for-method="feature(User creates individual profile by adding  profile)">feature(User creates individual profile by adding  profile)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Framework" title="runners.JobsRunner" hash-for-method="feature(Automated Adding job categories)">feature(Automated Adding job categories)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Framework" title="runners.MainRunner" hash-for-method="feature(Job portal)">feature(Job portal)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Framework" title="runners.MainRunner" hash-for-method="feature(landingPage)">feature(landingPage)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Framework" title="runners.MainRunner" hash-for-method="feature(Marketplace)">feature(Marketplace)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Framework" title="runners.MainRunner" hash-for-method="feature(Marketplace)">feature(Marketplace)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Cucumber_Framework -->
@@ -157,6 +167,129 @@
               <span class="class-name">runners.MainRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Marketplace)">
+                  </a> <!-- feature(Marketplace) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Marketplace)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;__next&apos;]/div/div/div/div/div/div[2]/a/span&quot;}
+  (Session info: chrome=86.0.4240.193)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-S3O4BKL&apos;, ip: &apos;192.168.3.46&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\USER\AppData\Local\Temp\scoped_dir21704_28606}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=86.0.4240.193, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 23828ff2a922fbb20f5deb656f33b581
+*** Element info: {Using=xpath, value=//div[@id=&apos;__next&apos;]/div/div/div/div/div/div[2]/a/span}
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;__next&apos;]/div/div/div/div/div/div[2]/a/span&quot;}
+  (Session info: chrome=86.0.4240.193)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-S3O4BKL&apos;, ip: &apos;192.168.3.46&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\USER\AppData\Local\Temp\scoped_dir21704_28606}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=86.0.4240.193, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 23828ff2a922fbb20f5deb656f33b581
+*** Element info: {Using=xpath, value=//div[@id=&apos;__next&apos;]/div/div/div/div/div/div[2]/a/span}
+	at sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at pageObjects.ViewOneProduct.market(ViewOneProduct.java:45)
+	at stepDefinitions.ViewOneProductSteps.user_clicks_on_market_view_one_product(ViewOneProductSteps.java:28)
+	at ✽.And user clicks on market (view one product)(ViewOneProduct.feature:17)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Marketplace)">
+                  </a> <!-- feature(Marketplace) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Marketplace)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: Unable to wait and click on the WebElement, using locator: &lt;[[ChromeDriver: chrome on XP (c8668a41e0f6c60f61d20c3b43607ba1)] -&gt; xpath: //body/div[@id=&apos;__next&apos;]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]/span[1]]&gt;
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.AssertionError: Unable to wait and click on the WebElement, using locator: &lt;[[ChromeDriver: chrome on XP (c8668a41e0f6c60f61d20c3b43607ba1)] -&gt; xpath: //body/div[@id=&apos;__next&apos;]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]/span[1]]&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at pageObjects.BasePage.waitAndClickElement(BasePage.java:58)
+	at pageObjects.AddProductServices.clickmarket(AddProductServices.java:53)
+	at stepDefinitions.AddProductsSteps.user_clicks_market(AddProductsSteps.java:30)
+	at ✽.And user clicks market(AddProducts.feature:24)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="feature(Marketplace)">
@@ -208,7 +341,17 @@ Caused by: java.lang.AssertionError: Unable to wait and click on the WebElement,
                   </a> <!-- feature(Marketplace) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(Marketplace)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: Unable to wait and click on the WebElement, using locator: &lt;[[ChromeDriver: chrome on XP (3dd56ffc062d77bd1a25f5aa17c6ac01)] -&gt; xpath: //body/div[@id=&apos;__next&apos;]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]/span[1]]&gt;
+                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/div[@id=&apos;__next&apos;]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]/span[1]&quot;}
+  (Session info: chrome=86.0.4240.193)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-S3O4BKL&apos;, ip: &apos;192.168.3.46&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\USER\AppData\Local\Temp\scoped_dir4504_28737}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=86.0.4240.193, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4c021088032b302f2b7102db06ffb5d1
+*** Element info: {Using=xpath, value=//body/div[@id=&apos;__next&apos;]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]/span[1]}
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -235,12 +378,36 @@ Caused by: java.lang.AssertionError: Unable to wait and click on the WebElement,
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.AssertionError: Unable to wait and click on the WebElement, using locator: &lt;[[ChromeDriver: chrome on XP (3dd56ffc062d77bd1a25f5aa17c6ac01)] -&gt; xpath: //body/div[@id=&apos;__next&apos;]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]/span[1]]&gt;
-	at org.junit.Assert.fail(Assert.java:88)
-	at pageObjects.BasePage.waitAndClickElement(BasePage.java:58)
-	at pageObjects.AddProductServices.clickmarket(AddProductServices.java:53)
-	at stepDefinitions.AddProductsSteps.user_clicks_market(AddProductsSteps.java:30)
-	at ✽.And user clicks market(AddProducts.feature:24)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/div[@id=&apos;__next&apos;]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]/span[1]&quot;}
+  (Session info: chrome=86.0.4240.193)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-S3O4BKL&apos;, ip: &apos;192.168.3.46&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\USER\AppData\Local\Temp\scoped_dir4504_28737}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=86.0.4240.193, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4c021088032b302f2b7102db06ffb5d1
+*** Element info: {Using=xpath, value=//body/div[@id=&apos;__next&apos;]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]/span[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at pageObjects.AddProductToCart.market(AddProductToCart.java:40)
+	at stepDefinitions.AddToCartSteps.user_clicks_market_add_to_cart(AddToCartSteps.java:27)
+	at ✽.And user clicks market (add to cart)(AddtoCart.feature:20)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -257,30 +424,30 @@ Caused by: java.lang.AssertionError: Unable to wait and click on the WebElement,
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="feature(User creates individual profile by adding  profile)">
+                  </a> <!-- feature(User creates individual profile by adding  profile) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(User creates individual profile by adding  profile)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Job portal)">
+                  </a> <!-- feature(Job portal) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Job portal)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="feature(landingPage)">
                   </a> <!-- feature(landingPage) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(landingPage)</span>
-                  <em>
-(Runs Cucumber Feature)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="feature(Marketplace)">
-                  </a> <!-- feature(Marketplace) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(Marketplace)</span>
-                  <em>
-(Runs Cucumber Feature)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="feature(Marketplace)">
-                  </a> <!-- feature(Marketplace) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(Marketplace)</span>
                   <em>
 (Runs Cucumber Feature)                  </em>
                 </div> <!-- method-content -->
@@ -308,7 +475,7 @@ Caused by: java.lang.AssertionError: Unable to wait and click on the WebElement,
         </div> <!-- panel Cucumber_Framework -->
         <div panel-name="test-xml-Cucumber_Framework" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\USER\git\community-project\testng.xml</span>
+            <span class="header-content">C:\official_projects\community-project\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -326,7 +493,7 @@ Caused by: java.lang.AssertionError: Unable to wait and click on the WebElement,
       &lt;class name=&quot;runners.MainRunner&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;setUpClass&quot;/&gt;
-          &lt;include name=&quot;feature&quot; invocation-numbers=&quot;0 3&quot;/&gt;
+          &lt;include name=&quot;feature&quot; invocation-numbers=&quot;0 1 5 6&quot;/&gt;
           &lt;include name=&quot;tearDownClass&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- runners.MainRunner --&gt;
@@ -386,31 +553,39 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'runners.JobsRunner')
-data.setCell(0, 3, 102395);
+data.setCell(0, 3, 87860);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'feature')
 data.setCell(1, 2, 'runners.MainRunner')
-data.setCell(1, 3, 90219);
+data.setCell(1, 3, 83627);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'feature')
 data.setCell(2, 2, 'runners.MainRunner')
-data.setCell(2, 3, 74106);
+data.setCell(2, 3, 60968);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'feature')
 data.setCell(3, 2, 'runners.MainRunner')
-data.setCell(3, 3, 63106);
+data.setCell(3, 3, 46163);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'feature')
 data.setCell(4, 2, 'runners.MainRunner')
-data.setCell(4, 3, 24570);
+data.setCell(4, 3, 32774);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'feature')
 data.setCell(5, 2, 'runners.MainRunner')
-data.setCell(5, 3, 21144);
+data.setCell(5, 3, 28955);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'feature')
+data.setCell(6, 2, 'runners.MainRunner')
+data.setCell(6, 3, 25095);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'feature')
+data.setCell(7, 2, 'runners.MainRunner')
+data.setCell(7, 3, 10875);
 window.suiteTableData['Cucumber_Framework']= { tableData: data, tableDiv: 'times-div-Cucumber_Framework'}
 return data;
 }
@@ -448,46 +623,58 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">feature(Automated Adding job categories)</span>
-                <span class="method-start">357 ms</span>
+                <span class="method-start">333 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">102755 ms</span>
+                <span class="method-start">88194 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runners.MainRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">103044 ms</span>
+                <span class="method-start">88638 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(Marketplace)</span>
-                <span class="method-start">103063 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">feature(Marketplace)</span>
-                <span class="method-start">166178 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">feature(landingPage)</span>
-                <span class="method-start">240287 ms</span>
+                <span class="method-start">88705 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(Marketplace)</span>
-                <span class="method-start">261433 ms</span>
+                <span class="method-start">149676 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">feature(User creates individual profile by adding  profile)</span>
+                <span class="method-start">195841 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(Job portal)</span>
+                <span class="method-start">228617 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(landingPage)</span>
+                <span class="method-start">239494 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">feature(Marketplace)</span>
-                <span class="method-start">286004 ms</span>
+                <span class="method-start">264592 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(Marketplace)</span>
+                <span class="method-start">293548 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">376225 ms</span>
+                <span class="method-start">377176 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

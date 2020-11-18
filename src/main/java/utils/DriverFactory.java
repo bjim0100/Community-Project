@@ -19,7 +19,8 @@ import pageObjects.LandingPageOrg;
 import pageObjects.Products_Page;
 import pageObjects.Profile_Page;
 import pageObjects.ViewBusinessProfile;
-import pageObjects.ViewJobsAndApply;
+import pageObjects.ViewJobandApply;
+
 import pageObjects.ViewOneProduct;
 
 
@@ -31,7 +32,7 @@ public class DriverFactory {
 	public static ViewOneProduct viewoneproduct;
 	public static AddProductToCart addproducttocart;
 	public static AddJobCategory addjobcategory;
-	public static ViewJobsAndApply viewjobsandapply;
+	public static ViewJobandApply viewjobandapply;
 	public static Profile_Page profilePage;
 	public static IndividualProfileList individualprofilelist;
 
@@ -88,7 +89,7 @@ public class DriverFactory {
 			addproducttocart =  PageFactory.initElements(driver, AddProductToCart
 					.class);
 			addjobcategory = PageFactory.initElements(driver, AddJobCategory.class);
-			viewjobsandapply = PageFactory.initElements(driver, ViewJobsAndApply.class);
+			viewjobandapply = PageFactory.initElements(driver, ViewJobandApply.class);
 			individualprofilelist = PageFactory.initElements(driver, IndividualProfileList.class);
 			profilePage = PageFactory.initElements(driver, Profile_Page.class);
 			

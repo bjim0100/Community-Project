@@ -2,28 +2,28 @@ Feature: User creates individual profile by adding  profile
 
 
 Background:
-Given user navigates to url
-When user submits email
-And user submits password
-And user clicks login button
+Given user navigates to url (CP)
+When user submits email (CP)
+And user submits password (CP)
+And user clicks login button (CP)
 
 
 Scenario Outline:
-Given user clicks on header
-When user clicks on profile
-And user clicks on edit profile
-And user submits "<firstname>" firstname 
-And user submits "<address>"
-And user edits Date of birth
-And user sends phone number "<number>"
-And user submits  gps "<gps>" 
-And user selects gender
-And user changes privacy level
-And user clicks save
-Then user information should be saved successfully 
+Given user clicks on header (CP)
+When user clicks on profile (CP)
+And user clicks on edit profile (CP)
+And user submits "<firstname>" firstname  (CP)
+And user submits "<address>" (CP)
+# And user edits Date of birth (CP)
+And user sends phone number "<number>" (CP)
+And user submits  gps "<gps>" (CP)
+And user selects gender (CP)
+And user changes privacy level (CP)
+And user clicks save (CP)
+Then user information should be saved successfully (CP)
 
 Examples:
 |firstname     | address  | gps         | number |
 | obeng Boateng       |      Anaji     |WS-123-4564       | 0245345324|
-| obeng Boateng       |      Anaji     |BS-123-4564       | 0245777777|
+| Kankama      |      Anaji     |BS-123-4564       | 0245777777|
 | obeng Boateng       |      Anaji     |AS-123-4564       | 0544388567|

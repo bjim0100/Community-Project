@@ -11,19 +11,19 @@ import org.openqa.selenium.support.ui.Select;
 public class Profile_Page extends BasePage{
 	public @FindBy(xpath ="//input[@id='InputEmail']") WebElement Textfield_email;
 	public @FindBy(xpath ="//input[@id='InputPassword1']") WebElement Textfield_password;
-	public @FindBy(xpath ="//button[@class='btn btn-primary btn-block']") WebElement button_login;
+	public @FindBy(xpath ="//button[@id='signin_button']") WebElement button_login;
 	public @FindBy(xpath ="//input[@placeholder='Full name']") WebElement Textfield_firstname;
-	public @FindBy(xpath ="//input[@placeholder='eg. AK-039-5028']") WebElement Textfield_gps;
+	public @FindBy(xpath ="//body/div[@id='__next']/div[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/div[3]/div[4]/input[1]") WebElement Textfield_gps;
 	public @FindBy(xpath = "//input[@id='dob']") WebElement Textfield_dateofbirth;
-	public @FindBy(xpath ="//input[@placeholder='Executive Avenue Anaji']") WebElement Textfield_address;
-	public @FindBy(xpath ="//a[@class='btn btn-primary btn-block mt-1']") WebElement button_editprofile;
+	public @FindBy(xpath ="//body/div[@id='__next']/div[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/div[3]/div[2]/input[1]") WebElement Textfield_address;
+	public @FindBy(xpath ="//a[@id='editprofile_button/']") WebElement button_editprofile;
 	public @FindBy(xpath = "sdsfdf") WebElement Textfield_message;
-	public @FindBy(xpath ="//button[contains(@class,'mb-1 mt-5')]") WebElement button_save;
-	public @FindBy(xpath = "//a[contains(text(),'View Profile')]") WebElement button_profile;
-	public @FindBy(xpath = "//div[5]//select[1]") WebElement dropdown_privacylevel;
-	public @FindBy(xpath ="//*[@id=\"__next\"]/div/div/div[1]/div/div/div[2]/div/a/span") WebElement button_profilename;
+	public @FindBy(xpath ="//button[contains(text(),'Save')]") WebElement button_save;
+	public @FindBy(xpath = "//body/div[@id='__next']/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/a[1]") WebElement button_profile;
+	public @FindBy(xpath = "//body/div[@id='__next']/div[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/div[1]/div[5]/select[1]") WebElement dropdown_privacylevel;
+	public @FindBy(xpath ="//span[contains(text(),'Obeng Boateng Junior')]") WebElement button_profilename;
 	//public @FindBy(xpath = "//*[@id=\"__next\"]/div/div/div/div[3]/form/div[1]/div[1]/div[3]/div/input") WebElement Textfield_profileEmail;
-	public @FindBy(xpath = "//input[@placeholder='eg. 024 567 3456']") WebElement Textfield_number;
+	public @FindBy(xpath = "//body/div[@id='__next']/div[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/div[1]/div[3]/input[1]") WebElement Textfield_number;
 	public @FindBy(xpath = "//input[@id='inlineRadio2']") WebElement radiobutton_female;
 	
 	
@@ -38,12 +38,12 @@ public class Profile_Page extends BasePage{
 }
 	
 	public Profile_Page enteremail() throws Exception   {
-		sendKeysToWebElement(Textfield_email, "obeng.boateng@amalitech.com");
+		sendKeysToWebElement(Textfield_email, "aa@individual.com");
 	return new Profile_Page();	
 }
 	
 	public Profile_Page enterpassword() throws Exception   {
-		sendKeysToWebElement(Textfield_password, "Boateng1");
+		sendKeysToWebElement(Textfield_password, "Kankama1");
 	return new Profile_Page();	
 }
 	
