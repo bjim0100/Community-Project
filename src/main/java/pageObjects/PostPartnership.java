@@ -2,6 +2,7 @@ package pageObjects;
 
 import java.io.IOException;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
@@ -21,7 +22,8 @@ public class PostPartnership extends BasePage{
 	public @FindBy(xpath ="//input[@placeholder='Full name']") WebElement Textfield_formemail;
 	public @FindBy(xpath ="//input[@placeholder='Full name']") WebElement Textfield_phonenumber;
 	public @FindBy(xpath ="//input[@placeholder='Full name']") WebElement button_save;
-	
+	public @FindBy(xpath = "") WebElement textfield_phonenumber;
+	public @FindBy(xpath = "") WebElement textfield_partnershipDescription;
 	
 	public PostPartnership() throws IOException {
 		super();
@@ -67,15 +69,62 @@ public class PostPartnership extends BasePage{
 		return new PostPartnership();
 	}
 	
-	public PostPartnership businesstype() throws IOException {
+	public PostPartnership businesstype(int Btype) throws IOException {
 		Select select = new Select(button_industry);
-		select.selectByIndex(1);
+		select.selectByIndex(Btype);
 		
 		return new PostPartnership();
 	}
-	public PostPartnership partnershiptype() throws IOException {
+	public PostPartnership partnershiptype(int Ptype) throws IOException {
+		Select select = new Select(button_typeofpartnership);
+		select.selectByIndex(Ptype);
+		
+		
+		return new PostPartnership();
+	}
+	public PostPartnership FormEmail(String email) throws Exception {
+		sendKeysToWebElement(Textfield_formemail, email);
+		
 		return new PostPartnership();
 	}
 	
+public PostPartnership phonenumber(String phonenumber) throws Exception {
+		sendKeysToWebElement(textfield_phonenumber, phonenumber);
+		
+		return new PostPartnership();
+	}
+
+public PostPartnership location() throws Exception {
+	
+	sendKeysToWebElement(Textfield_location, "");
+	return new PostPartnership();
+}
+	
+public PostPartnership businessDescription() throws Exception {
+	sendKeysToWebElement(Textfield_description, "");
+	
+	return new PostPartnership();
+}
+
+public PostPartnership partnershipDescription(String description) throws Exception {
+	sendKeysToWebElement(textfield_partnershipDescription, description);
+	
+	return new PostPartnership();
+}
+public PostPartnership clickPost() throws Exception {
+	waitAndClickElement(button_save);
+	
+	return new PostPartnership();
+}
+
+public PostPartnership validate() throws Exception {
+	String current_url =getDriver().getCurrentUrl();
+	String url = "";
+	Assert.assertEquals(url, current_url);
+	
+	return new PostPartnership();
+}
+
+
 
 }
