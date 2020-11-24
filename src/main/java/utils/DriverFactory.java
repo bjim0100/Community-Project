@@ -16,12 +16,14 @@ import pageObjects.AddProductToCart;
 import pageObjects.ContactUs_Page;
 import pageObjects.IndividualProfileList;
 import pageObjects.LandingPageOrg;
+import pageObjects.PostPartnership;
 import pageObjects.Products_Page;
 import pageObjects.Profile_Page;
 import pageObjects.ViewBusinessProfile;
 import pageObjects.ViewJobandApply;
 
 import pageObjects.ViewOneProduct;
+import pageObjects.ViewPartnership;
 
 
 public class DriverFactory {
@@ -35,6 +37,8 @@ public class DriverFactory {
 	public static ViewJobandApply viewjobandapply;
 	public static Profile_Page profilePage;
 	public static IndividualProfileList individualprofilelist;
+	public static PostPartnership postpartnership;
+	public static ViewPartnership viewpartnership;
 
 	public WebDriver getDriver() {
 		try {
@@ -92,6 +96,8 @@ public class DriverFactory {
 			viewjobandapply = PageFactory.initElements(driver, ViewJobandApply.class);
 			individualprofilelist = PageFactory.initElements(driver, IndividualProfileList.class);
 			profilePage = PageFactory.initElements(driver, Profile_Page.class);
+			postpartnership = PageFactory.initElements(driver, PostPartnership.class);
+			viewpartnership= PageFactory.initElements(driver, ViewPartnership.class);
 			
 		}
 		return driver;
