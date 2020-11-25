@@ -22,9 +22,9 @@ import pageObjects.BasePage;
 				"com.cucumber.listener.ExtentCucumberFormatter:output/report.html" })
 
 public class MainRunner extends AbstractTestNGCucumberTests {
-//	@AfterClass
-//	public static void writeExtentReport() throws IOException {
-//		Reporter.loadXMLConfig(new File(System.getProperty("user.dir") + "\\src\\main\\java\\utils\\ReportsConfig.xml"));
-//		BasePage.copyLatestExtentReport();
-//	}
+	@AfterClass
+	public static void writeExtentReport() throws IOException {
+		Reporter.loadXMLConfig(new File(System.getProperty("user.dir") + "\\src\\main\\java\\utils\\ReportsConfig.xml"));
+		BasePage.copyLatestExtentReport();
+	}
 }

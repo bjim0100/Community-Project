@@ -2,6 +2,7 @@ package pageObjects;
 
 import java.io.IOException;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -55,9 +56,16 @@ public class ViewPartnership extends BasePage{
 	
 	
 	public ViewBusinessProfile businesstitle() throws IOException {
+		getDriver().get("");
 		return new ViewBusinessProfile();
 	}
 	
+	public ViewBusinessProfile validate() throws IOException {
+		String current_url =getDriver().getCurrentUrl();
+		String url = "";
+		Assert.assertEquals(url, current_url);
+		return new ViewBusinessProfile();
+	}
 	
 	
 }
