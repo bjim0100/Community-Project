@@ -25,7 +25,7 @@ public class AddProductToCart extends BasePage{
 	}
 	
 	public AddProductToCart login() throws Exception {
-		sendKeysToWebElement(Textfield_email, "obeng.boateng@amalitech.com");
+		sendKeysToWebElement(Textfield_email, "aa@individual.com");
 		sendKeysToWebElement(Textfield_password, "Kankama1");
 		return new AddProductToCart();
 	}

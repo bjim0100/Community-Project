@@ -1,6 +1,6 @@
 @COMMUNITY-423
 @REQ_COMMUNITY-2
-Feature: Marketplace
+Feature: Add products
 
 	#Tests As a registered business I want to add products so that individuals can view and express interest in the product.
 	#

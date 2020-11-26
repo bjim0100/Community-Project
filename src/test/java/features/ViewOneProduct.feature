@@ -20,6 +20,6 @@ Feature: Marketplace
 		
 		Examples:
 		| product | url |
-		|   http://20.52.44.20/market/1     |http://20.52.44.20/market/1   |
-		| http://20.52.44.20/market/2       | http://20.52.44.20/market/2   |
-		|  http://20.52.44.20/market/3      |  http://20.52.44.20/market/3  |
+		|   http://20.52.44.20/market/319     |http://20.52.44.20/market/319   |
+		| http://20.52.44.20/market/320       | http://20.52.44.20/market/320   |
+		|  http://20.52.44.20/market/318      |  http://20.52.44.20/market/318  |

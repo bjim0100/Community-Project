@@ -14,7 +14,7 @@ import pageObjects.BasePage;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-		features = { "C:\\Users\\USER\\git\\community-project\\src\\test\\java\\Features" }, 
+		features = { "C:\\Users\\USER\\git\\community-project\\src\\test\\java\\features" }, 
 		glue = {"stepDefinitions" }, 
 		monochrome = true, 
 		tags = {}, 

@@ -8,7 +8,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = { "C:\\Users\\USER\\git\\community-project\\src\\test\\java\\jobFeatures\\AddCategories.feature" }, 
+		features = { "C:\\Users\\USER\\git\\community-project\\src\\test\\java\\jobFeatures" }, 
 		glue = {"stepDefinitions"}, 
 		monochrome = true, 
 		tags = {}, 
