@@ -21,7 +21,7 @@ public class Profile_Page extends BasePage{
 	public @FindBy(xpath ="//button[contains(text(),'Save')]") WebElement button_save;
 	public @FindBy(xpath = "//body/div[@id='__next']/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/a[1]") WebElement button_profile;
 	public @FindBy(xpath = "//body/div[@id='__next']/div[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/div[1]/div[5]/select[1]") WebElement dropdown_privacylevel;
-	public @FindBy(xpath ="//span[contains(text(),'Obeng Boateng Junior')]") WebElement button_profilename;
+	public @FindBy(xpath ="//div[@id='__next']/div/div/div/div/div/div[4]/a/span[2]") WebElement button_profilename;
 	//public @FindBy(xpath = "//*[@id=\"__next\"]/div/div/div/div[3]/form/div[1]/div[1]/div[3]/div/input") WebElement Textfield_profileEmail;
 	public @FindBy(xpath = "//body/div[@id='__next']/div[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/div[1]/div[3]/input[1]") WebElement Textfield_number;
 	public @FindBy(xpath = "//input[@id='inlineRadio2']") WebElement radiobutton_female;

@@ -1,6 +1,6 @@
 @COMMUNITY-423
 @REQ_COMMUNITY-2
-Feature: Marketplace
+Feature: View Profile
 
 	#Tests As a platform visitor, I should be able to see all organizations/businesses. (View all members user story)
 	#
@@ -16,4 +16,4 @@ Feature: Marketplace
 		And user clicks login (view profile)
 		And user clicks members
 		And user clicks a business profile
-		Then user should see the landing page 
+#		Then user should see the landing page 

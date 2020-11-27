@@ -34,7 +34,7 @@ Feature: Add products
 		Examples:
 		  |name|type|description|price|category|message|
 		  | Shoe|product |It is a shoe | 30 | Phones, Tablets and Computers | Product Added Successfully  |
-		  | Doctor|services |give health advice|  |services|     |
-   	  |     |services |give health advice| 40|  services   |     |
-  	  |    Nurse M |services |give health advice| 40|Plastics and Rubbers| Product Added Successfully|
-		  | Shoe|product |It is a shoe | 50  |Shoes, Sandals and Footwears | Product Added Successfully|
+#		  | Doctor|services |give health advice|  |services|     |
+   #	  |     |services |give health advice| 40|  services   |     |
+  #	  |    Nurse M |services |give health advice| 40|Plastics and Rubbers| Product Added Successfully|
+#		  | Shoe|product |It is a shoe | 50  |Shoes, Sandals and Footwears | Product Added Successfully|

@@ -51,6 +51,7 @@ public class IndividualProfileList extends BasePage{
 	
 	public IndividualProfileList clickindividual() throws Exception {
 		waitAndClickElement(button_individualOrg);
+		Thread.sleep(20000);
 		getDriver().findElement(By.xpath("//a[@id='display-individuals']")).click();
 		return new IndividualProfileList();
 	}

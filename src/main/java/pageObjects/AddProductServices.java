@@ -13,7 +13,7 @@ public class AddProductServices extends BasePage{
 	public @FindBy(xpath = "//input[@id='InputEmail']") WebElement Textfield_email;
 	public @FindBy(xpath = "//input[@id='InputPassword1']") WebElement Textfield_password;
 	public @FindBy(xpath = "//button[@id='signin_button']") WebElement button_login;
-	public @FindBy(xpath = "//body/div[@id='__next']/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]/span[1]") WebElement button_market;
+	public @FindBy(xpath = "//div[@id='__next']/div/div/div/div/div/div[2]/a/span") WebElement button_market;
 	public @FindBy(xpath = "//body/div[@id='__next']/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]") WebElement button_addproducts;
 	public @FindBy(xpath = "//body/div[@id='__next']/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/form[1]/div[2]/div[1]/div[1]/input[1]") WebElement Textfield_name;
 	public @FindBy(xpath = "//div[@id='__next']/div/div/div[2]/div[2]/div/div[2]/form/div[2]/div/div[3]/input") WebElement Textfield_price;
@@ -49,8 +49,10 @@ public class AddProductServices extends BasePage{
 		return new AddProductServices();
 	}
 	
-	public AddProductServices clickmarket() throws IOException, InterruptedException {
+	public AddProductServices clickmarkets() throws IOException, InterruptedException {
+		Thread.sleep(10000);
 		waitAndClickElement(button_market);
+		//getDriver().findElement(By.xpath("//div[2]/div/div/div/div/div/div[2]/a/span")).click();
 		return new AddProductServices();
 	}
 	

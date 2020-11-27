@@ -10,4 +10,5 @@ Feature: Job portal
 	#	And user submits password (IP)
 		And user clicks login button (IP)
 		And user clicks on members button (IP)
+		And user clicks on individual
 		Then A list of individuals appear (IP)

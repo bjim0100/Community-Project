@@ -148,10 +148,10 @@ public class CreateIndividualProfil_Steps extends DriverFactory{
 //		profilePage.enterdateofbirth();
 //	}
 
-	@When("^user sends phone number \"([^\"]*)\" \\(CP\\)$")
-	public void user_sends_phone_number_CP(String number) throws Exception  {
-		profilePage.sendnumber(number);
-	}
+//	@When("^user sends phone number \"([^\"]*)\" \\(CP\\)$")
+//	public void user_sends_phone_number_CP(String number) throws Exception  {
+//		profilePage.sendnumber(number);
+//	}
 
 	@When("^user submits  gps \"([^\"]*)\" \\(CP\\)$")
 	public void user_submits_gps_CP(String gps) throws Exception  {

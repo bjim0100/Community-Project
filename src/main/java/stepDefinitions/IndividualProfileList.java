@@ -49,6 +49,11 @@ public class IndividualProfileList extends DriverFactory {
 	public void user_clicks_on_members_button_IP() throws Exception {
 		individualprofilelist.clickmember();
 	}
+	
+	@When("^user clicks on individual$")
+	public void user_clicks_on_individual() throws Exception {
+		individualprofilelist.clickindividual();
+	}
 
 	@Then("^A list of individuals appear \\(IP\\)$")
 	public void a_list_of_individuals_appear_IP()  {

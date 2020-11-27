@@ -1,6 +1,6 @@
 @COMMUNITY-553
 @REQ_COMMUNITY-2
-Feature: Marketplace
+Feature: Add to cart
 
 	#Tests As a customer I want to be able to add selected list of item to cart  ***************
 	#

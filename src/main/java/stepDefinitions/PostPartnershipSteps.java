@@ -38,12 +38,12 @@ public class PostPartnershipSteps extends DriverFactory{
 	}
 
 	@When("^user adds business type \"([^\"]*)\"\\(PAJ\\)$")
-	public void user_adds_business_type_PAJ(int Btype) throws IOException {
+	public void user_adds_business_type_PAJ(int Btype) throws IOException, InterruptedException {
 		postpartnership.businesstype(Btype);
 	}
 
 	@When("^user adds partnership type \"([^\"]*)\"\\(PAJ\\)$")
-	public void user_adds_partnership_type_PAJ(int Ptype) throws IOException  {
+	public void user_adds_partnership_type_PAJ(int Ptype) throws IOException, InterruptedException  {
 		postpartnership.partnershiptype(Ptype);
 	}
 

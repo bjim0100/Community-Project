@@ -3,6 +3,7 @@ package pageObjects;
 import java.io.IOException;
 
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -10,7 +11,7 @@ public class ViewBusinessProfile extends BasePage{
 	public @FindBy(xpath = "//input[@id='InputEmail']") WebElement Textfield_email;
 	public @FindBy(xpath = "//input[@id='InputPassword1']") WebElement Textfield_password;
 	public @FindBy(xpath = "//button[@id='signin_button']") WebElement button_login;
-	public @FindBy(xpath = "//a[contains(text(),'Members')]") WebElement button_members;
+	public @FindBy(xpath = "//body/div[@id='__next']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[5]/span[1]") WebElement button_members;
 	public @FindBy(xpath = "//span[contains(text(),'Kimasod Ent')]") WebElement button_OrgInfo;
 	
 	
@@ -40,7 +41,9 @@ public class ViewBusinessProfile extends BasePage{
 	}
 	
 	public ViewBusinessProfile clickmember() throws IOException, InterruptedException {
-		waitAndClickElement(button_members);
+		//waitAndClickElement(button_members);
+		Thread.sleep(5000);
+		getDriver().findElement(By.xpath("//div[@id='__next']/div/div/div/div/div/div[2]/a[5]/span")).click();
 		return new ViewBusinessProfile();
 		
 	}

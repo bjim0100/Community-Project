@@ -27,7 +27,7 @@ public class AddProductsSteps extends DriverFactory{
 
 	@And("^user clicks market$")
 	public void user_clicks_market() throws IOException, InterruptedException  {
-	    addproductsservices.clickmarket();
+	    addproductsservices.clickmarkets();
 	}
 
 	@And("^user clicks add products$")
