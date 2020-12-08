@@ -11,7 +11,7 @@ public class ViewBusinessProfile extends BasePage{
 	public @FindBy(xpath = "//input[@id='InputEmail']") WebElement Textfield_email;
 	public @FindBy(xpath = "//input[@id='InputPassword1']") WebElement Textfield_password;
 	public @FindBy(xpath = "//button[@id='signin_button']") WebElement button_login;
-	public @FindBy(xpath = "//body/div[@id='__next']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[5]/span[1]") WebElement button_members;
+	public @FindBy(xpath = "//body/div[@id='__next']/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[6]/span[1]") WebElement button_members;
 	public @FindBy(xpath = "//span[contains(text(),'Kimasod Ent')]") WebElement button_OrgInfo;
 	
 	

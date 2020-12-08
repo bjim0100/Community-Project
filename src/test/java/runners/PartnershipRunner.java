@@ -9,7 +9,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-		features = { "C:\\official_projects\\community-project\\src\\test\\java\\partnershipFeature\\PostPartneship.feature" }, 
+		features = { "C:\\official_projects\\community-project\\src\\test\\java\\partnershipFeature" }, 
 		glue = {"stepDefinitions" }, 
 		monochrome = true, 
 		tags = {}, 

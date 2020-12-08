@@ -14,6 +14,9 @@ import pageObjects.AddJobCategory;
 import pageObjects.AddProductServices;
 import pageObjects.AddProductToCart;
 import pageObjects.ContactUs_Page;
+import pageObjects.ForumPosts_delete;
+import pageObjects.ForumPosts_edit;
+import pageObjects.Forum_comment;
 import pageObjects.IndividualProfileList;
 import pageObjects.LandingPageOrg;
 import pageObjects.PostPartnership;
@@ -39,6 +42,9 @@ public class DriverFactory {
 	public static IndividualProfileList individualprofilelist;
 	public static PostPartnership postpartnership;
 	public static ViewPartnership viewpartnership;
+	public static ForumPosts_edit forumpost_edit;
+	public static ForumPosts_delete forumpost_delete;
+	public static Forum_comment forum_comment;
 
 	public WebDriver getDriver() {
 		try {
@@ -98,6 +104,9 @@ public class DriverFactory {
 			profilePage = PageFactory.initElements(driver, Profile_Page.class);
 			postpartnership = PageFactory.initElements(driver, PostPartnership.class);
 			viewpartnership= PageFactory.initElements(driver, ViewPartnership.class);
+			forumpost_edit = PageFactory.initElements(driver, ForumPosts_edit.class);
+			forumpost_delete = PageFactory.initElements(driver, ForumPosts_delete.class);
+			forum_comment = PageFactory.initElements(driver, Forum_comment.class);
 			
 		}
 		return driver;
