@@ -9,11 +9,11 @@ public class ForumPosts_edit extends BasePage {
 	public @FindBy(xpath = "//input[@id='InputEmail']") WebElement Textfield_email;
 	public @FindBy(xpath = "//input[@id='InputPassword1']") WebElement Textfield_password;
 	public @FindBy(xpath = "//button[@id='signin_button']") WebElement button_login;
-	public @FindBy(xpath = "") WebElement button_Forum;
-	public @FindBy(xpath = "") WebElement button_MyPost;
-	public @FindBy(xpath = "") WebElement button_Edit;
-	public @FindBy(xpath = "") WebElement Textfield_topic;
-	public @FindBy(xpath = "") WebElement button_Post;
+	public @FindBy(xpath = "//div[@id='__next']/div[2]/div/div/div/div/div[2]/a[2]/span") WebElement button_Forum;
+	public @FindBy(xpath = "//p[contains(text(),'My Posts')]") WebElement button_MyPost;
+	public @FindBy(xpath = "//body/div[@id='__next']/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]/h6[1]/strong[1]") WebElement button_Edit;
+	public @FindBy(xpath = "//input[@id='addForumTopic']") WebElement Textfield_topic;
+	public @FindBy(xpath = "//button[contains(text(),'Post')]") WebElement button_Post;
 
 	public ForumPosts_edit() throws IOException {
 		super();
@@ -37,6 +37,7 @@ public class ForumPosts_edit extends BasePage {
 	}
 
 	public ForumPosts_edit clicksForum() throws IOException, InterruptedException {
+		Thread.sleep(5000);
 		waitAndClickElement(button_Forum);
 		return new ForumPosts_edit();
 	}
@@ -52,7 +53,7 @@ public class ForumPosts_edit extends BasePage {
 	}
 
 	public ForumPosts_edit Changetopic() throws Exception {
-		sendKeysToWebElement(Textfield_topic, "");
+		sendKeysToWebElement(Textfield_topic, "Something new");
 		return new ForumPosts_edit();
 	}
 
