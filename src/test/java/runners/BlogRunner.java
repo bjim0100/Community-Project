@@ -17,6 +17,6 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		)
 
 
-public class BLogRunner extends AbstractTestNGCucumberTests{
+public class BlogRunner extends AbstractTestNGCucumberTests{
 
 }
