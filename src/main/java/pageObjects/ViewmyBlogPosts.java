@@ -11,8 +11,8 @@ public class ViewmyBlogPosts extends BasePage{
 	public @FindBy(xpath = "//input[@id='InputEmail']") WebElement Textfield_email;
 	public @FindBy(xpath = "//input[@id='InputPassword1']") WebElement Textfield_password;
 	public @FindBy(xpath = "//button[@id='signin_button']") WebElement button_login;
-	public @FindBy(xpath = "") WebElement button_blog;
-	public @FindBy(xpath = "") WebElement button_viewpost;
+	public @FindBy(xpath = "//div[@id='__next']/div[2]/div/div/div/div/div[2]/div[4]/a/span") WebElement button_blog;
+	public @FindBy(xpath = "(//a[contains(text(),'View my Post')])[2]") WebElement button_viewpost;
 	
 	
 	
@@ -28,8 +28,8 @@ public class ViewmyBlogPosts extends BasePage{
 	}
 
 	public ViewmyBlogPosts emailandpass() throws Exception {
-		sendKeysToWebElement(Textfield_email, "aa@business.com");
-		sendKeysToWebElement(Textfield_password, "Kankama1");
+		sendKeysToWebElement(Textfield_email, "testing.amalitech@gmail.com");
+		sendKeysToWebElement(Textfield_password, "12345678!Aa");
 		return new ViewmyBlogPosts();
 	}
 
@@ -53,7 +53,7 @@ public class ViewmyBlogPosts extends BasePage{
 	public ViewmyBlogPosts Validation() throws IOException {
 		
 		String current_url =getDriver().getCurrentUrl();
-		String url = "";
+		String url = "http://20.52.44.20/businessprofile";
 		Assert.assertEquals(url, current_url);
 		return new ViewmyBlogPosts();
 		

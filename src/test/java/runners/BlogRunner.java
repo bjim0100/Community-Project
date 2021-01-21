@@ -8,7 +8,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = { "C:\\official_projects\\community-project\\src\\test\\java\\blog" }, 
+		features = { "C:\\official_projects\\community-project\\src\\test\\java\\blog\\viewmyblogpost.feature" }, 
 		glue = {"stepDefinitions"}, 
 		monochrome = true, 
 		tags = {}, 
